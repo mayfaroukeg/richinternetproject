@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="bootstrap-sortable.css" rel="stylesheet" type="text/css">
+
+    <script src="script.js"></script>
+
+
+    <script src="bootstrap-sortable.js"></script>
+
+
+
+
+</head>
+
+<body>
+<form name="myForm"  onsubmit="return validateForm()">
+
+    Name: <input type="text" name="name" id="name" required ><br>
+    Calories: <input type="text" name="calorie" id="calorie"><br>
+    Fats: <input type="text" name="fat" id="fat"><br>
+
+
+    <button type="p" id="buttons">add food!</button>
+</form>
+
+
+<div class="container">
+    <table class="table sortable" id="table" >
+
+        <thead>
+        <tr>
+
+            <th data-defaultsign="AZ"> Name</th>
+            <th data-defaultsign="AZ" onClick="sortDescCal()"> Calories</th>
+            <th data-defaultsign="AZ" onClick="sortDescFat()">Fats</th>
+            <th data-defaultsign="AZ"> Modify</th>
+
+        </tr>
+        </thead>
+        <tbody >
+
+        </tbody>
+    </table>
+    <table class="table sortable" id="newtable"></table>
+
+    <input type="button" value="Get Sum " id="buttonClass">
+</div>
+
+
+<p id="total"></p>
+
+
+
+
+
+
+
+</body>
+</html>
