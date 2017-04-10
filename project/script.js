@@ -4,7 +4,7 @@
 
 
 
-
+//if document is ready display table
 
 $(document).ready(function() {
 
@@ -49,15 +49,15 @@ $(document).ready(function() {
             }
         }
     );
-    function validateForm() {
-        var x = document.forms["myForm"]["name"].value;
-        if (x == "") {
-            alert("Name must be filled out");
-            return true;
-        }
-    }
+  //  function validateForm() {
+   //     var x = document.forms["myForm"]["name"].value;
+    //    if (x == "") {
+     //       alert("Name must be filled out");
+     //       return false;
+     //   }
+ //   }
 
-
+//if the validate form is true make this call to post
     if (validateForm()) {
         $("#buttons").click(function() {
 
